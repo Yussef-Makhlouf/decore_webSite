@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطيف الجديد - شركة التصميم الداخلي والديكور والمقاولات العامة</title>
+    <meta name="description" content="شركة الطيف الجديد المتخصصة في التصميم الداخلي والخارجي، الديكورات، أعمال الزجاج، والمقاولات العامة في جدة، السعودية">
+    <meta name="keywords" content="تصميم داخلي، ديكور، زجاج، مقاولات، جدة، السعودية، تشطيب، واجهات زجاج">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Cairo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold primary-color">
+                    الطيف الجديد
+                </div>
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="#home" class="hover-primary px-3 py-2 rounded transition-all duration-300">الرئيسية</a>
+                    <a href="#about" class="hover-primary px-3 py-2 rounded transition-all duration-300">من نحن</a>
+                    <a href="#services" class="hover-primary px-3 py-2 rounded transition-all duration-300">خدماتنا</a>
+                    <a href="#portfolio" class="hover-primary px-3 py-2 rounded transition-all duration-300">أعمالنا</a>
+                    <a href="#contact" class="hover-primary px-3 py-2 rounded transition-all duration-300">تواصل معنا</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="primary-color text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-x-full transition-transform duration-300 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <div class="text-2xl font-bold primary-color">الطيف الجديد</div>
+                <button id="close-menu" class="text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="#home" class="block hover-primary px-3 py-2 rounded transition-all duration-300">الرئيسية</a>
+                <a href="#about" class="block hover-primary px-3 py-2 rounded transition-all duration-300">من نحن</a>
+                <a href="#services" class="block hover-primary px-3 py-2 rounded transition-all duration-300">خدماتنا</a>
+                <a href="#portfolio" class="block hover-primary px-3 py-2 rounded transition-all duration-300">أعمالنا</a>
+                <a href="#contact" class="block hover-primary px-3 py-2 rounded transition-all duration-300">تواصل معنا</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pattern-overlay min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="slide-right">
+                    <h1 class="text-5xl md:text-6xl font-bold secondary-color mb-6 text-shadow">
+                        الطيف الجديد
+                    </h1>
+                    <h2 class="text-3xl md:text-4xl font-600 primary-color mb-6">
+                        للتصميم الداخلي والديكور
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        نحن شركة متخصصة في التصميم الداخلي والخارجي، الديكورات، أعمال الزجاج، والمقاولات العامة. 
+                        نقدم حلول تصميم عصرية ومبتكرة تواكب أحدث الاتجاهات العالمية مع الحفاظ على الهوية العربية الأصيلة.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#services" class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-semibold text-center inline-block">
+                            <i class="fas fa-tools ml-2"></i>
+                            اكتشف خدماتنا
+                        </a>
+                        <a href="#contact" class="border-2 border-primary primary-color px-8 py-4 rounded-lg text-lg font-semibold text-center inline-block hover-primary transition-all duration-300">
+                            <i class="fas fa-phone ml-2"></i>
+                            تواصل معنا
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-up">
+                    <div class="relative">
+                        <div class="w-full h-96 bg-white rounded-2xl card-shadow p-8 flex items-center justify-center float-animation">
+                            <div class="text-center">
+                                <div class="text-8xl primary-color mb-4">
+                                 <img src="img/logo.png" alt="logo" class="w-full h-full object-cover">
+                                </div>
+                                <h3 class="text-2xl font-bold secondary-color mb-4">تصميم استثنائي</h3>
+                                <p class="text-gray-600">نحول أحلامك إلى واقع ملموس بأيدي خبراء التصميم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="section-title">من نحن</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    شركة رائدة في مجال التصميم والديكور بالمملكة العربية السعودية
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="slide-right">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <h3 class="text-2xl font-bold secondary-color mb-4">رؤيتنا</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            أن نكون الشركة الرائدة في مجال التصميم الداخلي والخارجي والمقاولات العامة في المملكة العربية السعودية، 
+                            ونسعى لتقديم أفضل الحلول التصميمية المبتكرة التي تلبي احتياجات عملائنا وتتجاوز توقعاتهم.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold secondary-color mb-4">رسالتنا</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            نلتزم بتقديم خدمات عالية الجودة في التصميم والتنفيذ، مع الحرص على استخدام أحدث التقنيات والمواد 
+                            عالية الجودة لضمان رضا عملائنا وتحقيق أهدافهم.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="slide-up">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white rounded-xl p-6 card-shadow text-center scale-hover">
+                            <div class="stats-counter">10+</div>
+                            <p class="text-gray-600 font-semibold">سنوات من الخبرة</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 card-shadow text-center scale-hover">
+                            <div class="stats-counter">500+</div>
+                            <p class="text-gray-600 font-semibold">مشروع منجز</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 card-shadow text-center scale-hover">
+                            <div class="stats-counter">100+</div>
+                            <p class="text-gray-600 font-semibold">عميل راضٍ</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 card-shadow text-center scale-hover">
+                            <div class="stats-counter">24/7</div>
+                            <p class="text-gray-600 font-semibold">خدمة العملاء</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="section-title">خدماتنا</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    نقدم مجموعة شاملة من الخدمات المتخصصة في التصميم والديكور
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 1: تنفيذ الديكورات -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="slide-right">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <div class="icon-wrapper mb-6">
+                            <i class="fas fa-paint-brush text-4xl primary-color"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold secondary-color mb-6">تنفيذ الديكورات</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            نقدم خدمات تنفيذ الديكورات بأعلى معايير الجودة، حيث نقوم بتنفيذ الأسقف والجدران والأرضيات والإضاءة والأثاث الثابت والإكسسوارات بأفضل المواد وأحدث التقنيات.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تصميم الأسقف المعلقة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تنفيذ الجدران الديكورية
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تركيب الأرضيات الفاخرة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                أنظمة الإضاءة الحديثة
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="slide-up">
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-primary to-secondary rounded-2xl overflow-hidden card-shadow">
+                            <img src="img/design1.png" alt="تنفيذ الديكورات" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: أعمال الزجاج -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="slide-right">
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-secondary to-primary rounded-2xl overflow-hidden card-shadow">
+                            <img src="img/glass1.png" alt="أعمال الزجاج" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Content -->
+                <div class="slide-up">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <div class="icon-wrapper mb-6">
+                            <i class="fas fa-cube text-4xl primary-color"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold secondary-color mb-6">أعمال الزجاج</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            نختص في تنفيذ جميع أنواع أعمال الزجاج، من واجهات زجاج استركشر وسبايدر، إلى زجاج سيكوريت للأبواب والفواصل، وكبائن شاور وغيرها من الأعمال الزجاجية.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                واجهات زجاج استركشر
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                أعمال السبايدر جلاس
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                زجاج سيكوريت للأبواب
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                كبائن الشاور الزجاجية
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: المقاولات العامة -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="slide-right">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <div class="icon-wrapper mb-6">
+                            <i class="fas fa-hard-hat text-4xl primary-color"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold secondary-color mb-6">المقاولات العامة</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            نقدم خدمات المقاولات العامة الشاملة، من تنفيذ مشاريع تشطيب كاملة إلى إدارة عمليات البناء والتنسيق مع الجهات المختصة، مع ضمان أعلى معايير الجودة.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                مشاريع التشطيب الكاملة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                إدارة عمليات البناء
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                التنسيق مع الجهات المختصة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                المتابعة والإشراف
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="slide-up">
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-primary to-secondary rounded-2xl overflow-hidden card-shadow">
+                            <img src="img/serv2.png" alt="المقاولات العامة" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 4: تصميم المطابخ -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="slide-right">
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-secondary to-primary rounded-2xl overflow-hidden card-shadow">
+                            <img src="img/kitchen.png" alt="تصميم المطابخ" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Content -->
+                <div class="slide-up">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <div class="icon-wrapper mb-6">
+                            <i class="fas fa-utensils text-4xl primary-color"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold secondary-color mb-6">تصميم المطابخ</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            نختص في تصميم وتنفيذ المطابخ العصرية والفاخرة، مع التركيز على الوظائف العملية والجمالية، باستخدام أحدث التقنيات وأفضل المواد.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تصميم مطابخ عصرية
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تركيب الخزانات الفاخرة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                أنظمة الإضاءة المتطورة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                الأجهزة الحديثة
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 5: أعمال التشطيب -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="slide-right">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <div class="icon-wrapper mb-6">
+                            <i class="fas fa-paint-roller text-4xl primary-color"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold secondary-color mb-6">أعمال التشطيب</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            نقدم خدمات التشطيب الشاملة للمشاريع السكنية والتجارية، مع ضمان الجودة العالية والالتزام بالمواعيد المحددة.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تشطيب الشقق والفلل
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تشطيب المكاتب التجارية
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                أعمال الدهانات والديكورات
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                                تركيب الأرضيات والجدران
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="slide-up">
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-primary to-secondary rounded-2xl overflow-hidden card-shadow">
+                            <img src="img/design3.png" alt="أعمال التشطيب" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="section-title">أعمالنا</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    مجموعة مختارة من أفضل مشاريعنا المنجزة
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-primary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-home text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">تصميم داخلي سكني</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">فيلا سكنية فاخرة</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتنفيذ كامل لفيلا سكنية بأسلوب عصري وفاخر</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-secondary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-building text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">واجهات زجاجية</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">مبنى تجاري</h3>
+                        <p class="text-gray-600 mb-4">تنفيذ واجهات زجاج استركشر لمبنى تجاري حديث</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-primary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-utensils text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">تصميم مطابخ</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">مطبخ عصري</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتنفيذ مطبخ عصري بأحدث التقنيات</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-secondary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-shower text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">كبائن شاور</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">حمام فاخر</h3>
+                        <p class="text-gray-600 mb-4">تنفيذ كبائن شاور زجاجية فاخرة</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-primary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-couch text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">تصميم مكاتب</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">مكتب إداري</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتنفيذ مكتب إداري بأسلوب عصري</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow scale-hover">
+                    <div class="h-64 bg-secondary flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-paint-roller text-5xl mb-4"></i>
+                            <h4 class="text-xl font-bold">تشطيب كامل</h4>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold secondary-color mb-2">مشروع سكني</h3>
+                        <p class="text-gray-600 mb-4">تشطيب كامل لمشروع سكني بأعلى معايير الجودة</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">المشروع مكتمل</span>
+                            <span class="text-sm primary-color font-semibold">جدة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="section-title">لماذا تختار الطيف الجديد؟</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    نتميز بالجودة والاحترافية في كل ما نقدمه
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center slide-up">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-star text-3xl primary-color"></i>
+                    </div>
+                    <h3 class="text-xl font-bold secondary-color mb-3">جودة عالية</h3>
+                    <p class="text-gray-600">نستخدم أفضل المواد والتقنيات لضمان أعلى مستويات الجودة</p>
+                </div>
+                
+                <div class="text-center slide-up" style="animation-delay: 0.2s;">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-clock text-3xl primary-color"></i>
+                    </div>
+                    <h3 class="text-xl font-bold secondary-color mb-3">التزام بالمواعيد</h3>
+                    <p class="text-gray-600">نحرص على تسليم المشاريع في الوقت المحدد دون تأخير</p>
+                </div>
+                
+                <div class="text-center slide-up" style="animation-delay: 0.4s;">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-users text-3xl primary-color"></i>
+                    </div>
+                    <h3 class="text-xl font-bold secondary-color mb-3">فريق خبير</h3>
+                    <p class="text-gray-600">فريق من أفضل المهندسين والمصممين ذوي الخبرة العالية</p>
+                </div>
+                
+                <div class="text-center slide-up" style="animation-delay: 0.6s;">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-handshake text-3xl primary-color"></i>
+                    </div>
+                    <h3 class="text-xl font-bold secondary-color mb-3">خدمة متميزة</h3>
+                    <p class="text-gray-600">نقدم خدمة عملاء متميزة ومتابعة مستمرة لضمان رضاكم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- المقاولات العامة - عرض صور المشاريع -->
+<section class="section-padding bg-gradient-to-br from-gray-50 to-white">
+    <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold secondary-color mb-6">المقاولات العامة</h2>
+            <div class="divider mx-auto"></div>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                نقدم خدمات المقاولات العامة الشاملة مع ضمان أعلى معايير الجودة والالتزام بالمواعيد المحددة
+            </p>
+                </div>
+
+        <!-- Desktop Layout -->
+        <div class="hidden lg:grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Images Masonry Layout (Left) -->
+            <div class="relative">
+                <div class="masonry-grid">
+                    <!-- Large Image -->
+                    <div class="masonry-item masonry-item-large bg-gradient-to-br from-primary to-secondary rounded-2xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/outdoor.jpg" alt="مشروع تشطيب فيلا فاخرة" class="w-full h-full object-cover">
+                     
+                    </div>
+                    
+                    <!-- Medium Image -->
+                    <div class="masonry-item masonry-item-medium bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/kit_decor.jpg" alt="مشروع مكتب تجاري" class="w-full h-full object-cover">
+                    
+                    </div>
+                    
+                    <!-- Small Image -->
+                    <div class="masonry-item masonry-item-small bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/salon.jpg" alt="مشروع ديكورات" class="w-full h-full object-cover">
+                    
+                    </div>
+                    
+                    <!-- Medium Image -->
+                    <div class="masonry-item masonry-item-medium bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/intern.jpg" alt="مشروع زجاج" class="w-full h-full object-cover">
+                    
+                    </div>
+                    
+                    <!-- Small Image -->
+                    <div class="masonry-item masonry-item-small bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/pro1.jpg" alt="مشروع مطبخ" class="w-full h-full object-cover">
+                     
+                    </div>
+                    
+                    <!-- Medium Image -->
+                    <div class="masonry-item masonry-item-medium bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/bath2.jpg" alt="مشروع تشطيب" class="w-full h-full object-cover">
+                    
+                    </div>
+                    
+                    <!-- Small Image -->
+                    <div class="masonry-item masonry-item-small bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/flat.jpg" alt="مشروع زجاج" class="w-full h-full object-cover">
+                    
+                    </div>
+                    
+                    <!-- Medium Image -->
+                    <!-- <div class="masonry-item masonry-item-medium bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                        <img src="img/kitchen2.png" alt="مشروع مطبخ" class="w-full h-full object-cover">
+                     
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- Content (Right) -->
+            <div class="slide-right">
+                <div class="bg-white rounded-2xl p-8 card-shadow">
+                    <div class="icon-wrapper mb-6">
+                        <i class="fas fa-building text-4xl primary-color"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold secondary-color mb-6">خدمات المقاولات العامة</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                        نقدم خدمات المقاولات العامة الشاملة، من تنفيذ مشاريع تشطيب كاملة إلى إدارة عمليات البناء والتنسيق مع الجهات المختصة، مع ضمان أعلى معايير الجودة.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold primary-color mb-2">50+</div>
+                            <div class="text-sm text-gray-600">مشروع منجز</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold primary-color mb-2">100%</div>
+                            <div class="text-sm text-gray-600">رضا العملاء</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 text-gray-600 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                            مشاريع التشطيب الكاملة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                            إدارة عمليات البناء
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                            التنسيق مع الجهات المختصة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-3 text-lg"></i>
+                            المتابعة والإشراف المستمر
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-semibold text-center inline-block w-full">
+                        <i class="fas fa-phone ml-2"></i>
+                        احصل على عرض سعر
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Layout -->
+        <div class="lg:hidden">
+            <!-- Mobile Content -->
+            <div class="text-center mb-8 slide-up">
+                <div class="bg-white rounded-2xl p-6 card-shadow mb-8">
+                    <div class="icon-wrapper mb-4">
+                        <i class="fas fa-building text-3xl primary-color"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold secondary-color mb-4">خدمات المقاولات العامة</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        نقدم خدمات المقاولات العامة الشاملة، من تنفيذ مشاريع تشطيب كاملة إلى إدارة عمليات البناء والتنسيق مع الجهات المختصة.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="text-center p-3 bg-gray-50 rounded-lg">
+                            <div class="text-xl font-bold primary-color mb-1">50+</div>
+                            <div class="text-xs text-gray-600">مشروع منجز</div>
+                        </div>
+                        <div class="text-center p-3 bg-gray-50 rounded-lg">
+                            <div class="text-xl font-bold primary-color mb-1">100%</div>
+                            <div class="text-xs text-gray-600">رضا العملاء</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-2 text-sm"></i>
+                            مشاريع التشطيب الكاملة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-2 text-sm"></i>
+                            إدارة عمليات البناء
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-2 text-sm"></i>
+                            التنسيق مع الجهات المختصة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle primary-color ml-2 text-sm"></i>
+                            المتابعة والإشراف المستمر
+                        </li>
+                    </ul>
+                    
+                    <a href="tel:0555004826" class="btn-primary text-white px-6 py-3 rounded-lg text-base font-semibold text-center inline-block w-full">
+                        <i class="fas fa-phone ml-2"></i>
+                        احصل على عرض سعر
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Projects Grid -->
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Project 1 -->
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/indoor2.jpg" alt="مشروع تشطيب فيلا" class="w-full h-full object-cover">
+                  
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/kit_decor.jpg" alt="مشروع مكتب تجاري" class="w-full h-full object-cover">
+                    
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/garden.jpg" alt="مشروع ديكورات" class="w-full h-full object-contain">
+                   
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/salon2.jpg" alt="مشروع زجاج" class="w-full h-full object-cover">
+                    
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/salon3.jpg" alt="مشروع مطبخ" class="w-full h-full object-contain ">
+                     
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-gradient-to-br from-secondary to-primary rounded-xl overflow-hidden card-shadow transform hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square relative">
+                        <img src="img/bath2.jpg" alt="مشروع تشطيب" class="w-full h-full object-cover">
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="section-title">تواصل معنا</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    نحن هنا لخدمتكم في أي وقت
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="slide-right">
+                    <div class="contact-info">
+                        <h3 class="text-2xl font-bold secondary-color mb-6">معلومات التواصل</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center ml-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold secondary-color">العنوان</h4>
+                                    <p class="text-gray-600">جدة - أبحر الشمال - طريق الملك سعود</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center ml-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold secondary-color">الهاتف</h4>
+                                    <p class="text-gray-600" dir="ltr">0555004826</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center ml-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold secondary-color">البريد الإلكتروني</h4>
+                                    <p class="text-gray-600">info@alteef-aljadeed.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center ml-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold secondary-color">ساعات العمل</h4>
+                                    <p class="text-gray-600">السبت - الخميس: 8:00 صباحاً - 6:00 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div class="mt-8">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map or Additional Info -->
+                <div class="slide-up">
+                    <div class="bg-white rounded-2xl p-8 card-shadow">
+                        <h3 class="text-2xl font-bold secondary-color mb-6">احصل على استشارة مجانية</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            هل تريد تحويل مساحتك إلى تحفة فنية؟ تواصل معنا الآن واحصل على استشارة مجانية من فريق خبرائنا. 
+                            نحن مستعدون لمساعدتك في تحقيق حلمك.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <i class="fas fa-phone primary-color text-xl ml-4"></i>
+                                <div>
+                                    <h4 class="font-bold secondary-color">اتصل بنا الآن</h4>
+                                    <p class="text-gray-600" dir="ltr">0555004826</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <i class="fab fa-whatsapp primary-color text-xl ml-4"></i>
+                                <div>
+                                    <h4 class="font-bold secondary-color">واتساب</h4>
+                                    <p class="text-gray-600">تواصل معنا عبر الواتساب</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <i class="fas fa-calendar primary-color text-xl ml-4"></i>
+                                <div>
+                                    <h4 class="font-bold secondary-color">احجز موعد</h4>
+                                    <p class="text-gray-600">احجز موعد لزيارة مجانية</p>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">الطيف الجديد</h3>
+                    <p class="text-gray-300 mb-4">
+                        شركة متخصصة في التصميم الداخلي والخارجي، الديكورات، أعمال الزجاج، والمقاولات العامة.
+                    </p>
+                    <div class="flex">
+                        <a href="https://www.tiktok.com/@al_tayef_for_decoration" class="social-icon whatsapp-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/al_tayef_for_decoration/" class="social-icon instagram-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/altayef_dec" class="social-icon twitter-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61577731637850" class="social-icon face-icon bg-blue-500" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">خدماتنا</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">تنفيذ الديكورات</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">أعمال الزجاج</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">المقاولات العامة</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">التصميم الداخلي</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">روابط مفيدة</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#home" class="hover:text-white transition-colors">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">من نحن</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">خدماتنا</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">تواصل معنا</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt ml-2"></i> جدة - أبحر الشمال - طريق الملك سعود</p>
+                        <p><i class="fas fa-phone ml-2"></i> 0555004826</p>
+                        <p><i class="fas fa-envelope ml-2"></i> info@alteef-aljadeed.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 الطيف الجديد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-4 left-4 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 transition-all duration-300 hover:bg-secondary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-x-full');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0');
+                scrollToTopBtn.classList.add('opacity-100');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0');
+                scrollToTopBtn.classList.remove('opacity-100');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar background change on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-up, .slide-right, .bounce-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add click to call functionality
+        document.querySelectorAll('[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    alert('يرجى الاتصال على الرقم: 0555004826');
+                }
+            });
+        });
+
+        // Animate counters
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.floor(current) + '+';
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.textContent = target + '+';
+                    }
+                };
+                
+                updateCounter();
+            });
+        };
+
+        // Trigger counter animation when section is visible
+        const statsSection = document.querySelector('#about');
+        if (statsSection) {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statsObserver.observe(statsSection);
+        }
+    </script>
+    <!-- Floating Contact Button -->
+    <a href="tel:0555004826" id="contactButton" class="fixed bottom-20 right-4 bg-primary text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-secondary" aria-label="اتصل بنا">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/966555004826" target="_blank" rel="noopener" id="whatsappButton" class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-green-600" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
